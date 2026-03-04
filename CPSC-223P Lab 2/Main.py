@@ -45,6 +45,7 @@ while current_input != 7:
         #Apply and check if its valid
         if(modify_contact(contact_list,first_name=FN,last_name=LN,index=index_to_modify) == False):
             print("Invalid Index Number.")
+            print("Invalid Index Number.")
     elif(current_input == 4):
         #Prompt the user for input
         index_to_delete = int(check_if_input_null_or_not_digit(input("Enter The Index Number: ")))
