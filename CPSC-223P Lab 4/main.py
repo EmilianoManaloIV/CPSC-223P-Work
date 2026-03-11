@@ -14,7 +14,7 @@ print(whoami.getName())
 
 #Import unlisted packages
 from mathematics.numbers import simple
-
+from mathematics.geometry import rectangle
 #---CHECK IF ALL FUNCTIONS WORK---
 #--mathematics package--
 #--numbers sub-package--
@@ -53,4 +53,14 @@ if (randomLeft/randomRight) == simple.division(left=randomLeft,right=randomRight
 else:
     print("DIV FAIL")
 
-#--
+#--geometry subpackage--
+#Create random values to test against
+randomRadius = random.randrange(-10,10)
+randomSide = random.randrange(-10,10)
+randomLength = random.randrange(-10,10)
+randomWidth = random.randrange(-10,10)
+#-circle.circumference
+if (2 * 3.14 * randomRadius) == circle.circumference(randomRadius):
+    print("CIRC PASS")
+else:
+    print("CIRC FAIL")
